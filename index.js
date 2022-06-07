@@ -64,16 +64,16 @@ function handleSelect(id, choice) {
     loadQuestion();
   };
 }
-function showScore() {
-  document.getElementById("quiz").innerHTML = `<h1>Result</h1>
-  <h2 id='score'>Your scored  ${quiz.score}</h2>`;
-}
-
 function showProgress() {
   document.getElementById("progress").textContent = `Question ${
     quiz.questionIndex + 1
   } of ${quiz.questions.length}`;
 }
+function showScore() {
+  document.getElementById("quiz").innerHTML = `<h1>Result</h1>
+  <h2 id='score'>Your scored  ${quiz.score}</h2>`;
+}
+
 const questions = [
   new Question(
     "JavaScript supports",
